@@ -1,0 +1,8 @@
+apiVersion: v2
+name: demo-backend
+version: 1.0.0
+dependencies:
+  - name: demo-backend
+    version: 0.1.1
+    repository: https://benjb59.github.io/helm-charts
+    enabled: true
