@@ -1,13 +1,14 @@
-ingress:
-  enabled: true
-  annotations: {}
-    # kubernetes.io/ingress.class: nginx
-  # kubernetes.io/tls-acme: "true"
-  hosts:
-    - host: demo-backend.dev.insee.io
-      paths:
-        - /
-  tls: []
-  #  - secretName: chart-example-tls
-  #    hosts:
-  #      - chart-example.local
+demo-backend:
+  ingress:
+    enabled: true
+    annotations: {}
+      # kubernetes.io/ingress.class: nginx
+    # kubernetes.io/tls-acme: "true"
+    hosts:
+      - host: demo-backend.dev.insee.io
+        paths:
+          - /
+    tls: []
+    #  - secretName: chart-example-tls
+    #    hosts:
+    #      - chart-example.local
